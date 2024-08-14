@@ -65,3 +65,8 @@ li:hover {
 #side-bar.active{
   left: 0;
 }
+
+/*on peut faire une class pour que quand la side barre est active, l'arriere du side soit plus foncé*/
+.active ~ .content {
+  opacity: 0.3;
+}
