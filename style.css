@@ -65,6 +65,23 @@ li:hover {
 #side-bar.active{
   left: 0;
 }
+/*creation de la croix en css*/
+/*quand la class est ACTIVE on modifie les span en selectionnant les enfants*/
+.active span{
+  position: absolute;
+}
+
+.active span:nth-child(1){
+  transform: rotate(45deg);
+}
+/*le deuxieme enfant nous pouvons le rendre invisible*/
+.active span:nth-child(2){
+  opacity: 0;
+}
+.active span:nth-child(3){
+  transform: rotate(-45deg);
+}
+
 
 /*on peut faire une class pour que quand la side barre est active, l'arriere du side soit plus foncé*/
 .active ~ .content {
